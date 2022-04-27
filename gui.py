@@ -6,7 +6,8 @@ from steganography import *
 
 
 def error_window(text):
-    window = sg.Window('Ошибка', layout=[[sg.Text(text)],
+    window = sg.Window('Ошибка', layout=[[sg.Text('ОШИБКА!')],
+                                         [sg.Text(text)],
                                          [sg.Button('Ок', enable_events=True)]], element_justification='c')
 
     while True:
