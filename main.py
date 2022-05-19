@@ -6,7 +6,4 @@ if __name__ == "__main__":
 
 
 
-# sg.theme('Dark Red')
-
-
 
