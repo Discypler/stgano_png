@@ -24,7 +24,7 @@ def start():
 
     file_frame_encr = sg.Frame(f'Выберите файл для сокрытия информации', [
         [sg.Input(key='File_jpg', visible=True, enable_events=True),
-         sg.FileBrowse(button_text='Выбрать', file_types=(("Изображения .jpg", "*.jpg"),), key='FileBrowse_jpg')]])
+         sg.FileBrowse(button_text='Выбрать', file_types=(("Изображения", "*.jpg", "*png"),), key='FileBrowse_jpg')]])
 
     file_frame_decr = sg.Frame(f'Выберите файл', [
                      [sg.Input(key='File_png', visible=True, enable_events=True),

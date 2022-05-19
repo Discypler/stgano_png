@@ -16,7 +16,7 @@ def binary_to_text(bin_str):
     return ''.join(chr(int(bin_str[i*8:i*8+8], 2)) for i in range(len(bin_str)//8))
 
 
-class SteganoImg:
+class SteganoImg():
     def __init__(self, image):
         self.path = image
         self.width = Image.open(image).width
